@@ -1,0 +1,181 @@
+/* height: 14 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #5c94fc;
+}
+
+#world {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    height: 32px;
+    /* width: 352%; */
+}
+
+.row:last-child{
+    padding-bottom: 10px;
+}
+
+.block {
+    background-image: url(../img/sprites_blue.png);
+    width: 32px;
+    height: 32px;
+    background-position: -238px -136px;
+    background-repeat: no-repeat;
+}
+
+.block.stone {
+    background-position: 0 0;
+}
+
+.block.half_stone {
+    background-position: 0 10px;
+    transform: translateY(-10px);
+}
+
+
+.block.brick {
+    background-position: -170px 0;
+}
+
+.block.questionBox {
+    background-position: -204px 0;
+}
+
+.block.grass1 {
+    background-position: -68px 0;
+}
+
+.block.grass2 {
+    background-position: -102px 0;
+}
+
+.block.grass3 {
+    background-position: -136px 0;
+}
+
+.block.cloud1 {
+    background-position: -102px -136px;
+}
+
+.block.cloud2 {
+    background-position: -136px -136px;
+}
+
+.block.cloud3 {
+    background-position: -170px -136px;
+}
+
+.block.cloud4 {
+    background-position: -544px -136px;
+}
+
+.block.cloud5 {
+    background-position: -578px -136px;
+}
+
+.block.cloud6 {
+    background-position: -612px -136px;
+}
+
+.block.pipelong {
+    background-position: -476px -136px;
+}
+
+.block.pipe1 {
+    background-position: -136px -34px;
+}
+
+.block.pipe2 {
+    background-position: -170px -34px;
+}
+
+.block.pipe3 {
+    background-position: -578px -34px;
+}
+
+.block.pipe4 {
+    background-position: -612px -34px;
+}
+
+.block.mountaintop {
+    background-position: -34px 0;
+}
+
+.block.mountainleftcorner {
+    background-position: -442px 0;
+}
+
+.block.mountainrightcorner {
+    background-position: -510px 0;
+}
+
+.block.mountainleftcenter {
+    background-position: -476px 0;
+}
+
+.block.mountaincenter {
+    background-position: -544px 0;
+}
+
+.block.mountainrightcenter {
+    background-position: -578px 0;
+}
+
+.block.brickbold {
+    background-position: -102px -204px;
+}
+
+.block.brickbridge {
+    background-position: -204px -34px;
+}
+
+.block.flag1 {
+    background-position: -544px -170px;
+}
+
+.block.flag2 {
+    background-position: -578px -170px;
+}
+
+.block.flagball {
+    background-position: -238px -34px;
+}
+
+.block.castle1 {
+    background-position: -272px -68px;
+}
+
+.block.castle2-1 {
+    background-position: -714px -68px;
+}
+
+.block.castle2-2 {
+    background-position: -340px -68px;
+}
+
+.block.castle2-3 {
+    background-position: -34px -102px;
+}
+
+.block.castle3-2 {
+    background-position: -476px -102px;
+}
+
+.block.castlehole1 {
+    background-position: 0 -102px;
+}
+
+.block.castlehole2 {
+    background-position: -442px -102px;
+}

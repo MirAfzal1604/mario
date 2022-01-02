@@ -5,8 +5,20 @@
     padding: 0;
 }
 
+html,
 body {
-    background: #5c94fc;
+    height: 100%;
+}
+
+body {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#worldBox {
+    position: absolute;
 }
 
 #world {
@@ -16,13 +28,44 @@ body {
     flex-wrap: wrap;
 }
 
+#mario {
+    background: url("../img/super-mario-sprite.png");
+    background-position-x: 0;
+    background-position-y: -96px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    transition: bottom 0.3s ease;
+}
+
+#mario.back {
+    transform: rotateY(180deg);
+}
+
+#mario.jump {
+    background-position-x: -160px;
+}
+
+#mario.walk {
+    background-position-x: 0;
+    animation: walk 0.3s steps(3, start) infinite;
+}
+
+@keyframes walk {
+    to {
+        background-position-x: -96px;
+    }
+}
+
 .row {
     display: flex;
     height: 32px;
     /* width: 352%; */
 }
 
-.row:last-child{
+.row:last-child {
     padding-bottom: 10px;
 }
 
@@ -42,7 +85,6 @@ body {
     background-position: 0 10px;
     transform: translateY(-10px);
 }
-
 
 .block.brick {
     background-position: -170px 0;
